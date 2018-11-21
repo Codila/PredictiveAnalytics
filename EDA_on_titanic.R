@@ -39,7 +39,7 @@ table(test$partition)
 View(test)
 names(train)
 
-#model defination
+#model performance evaluattion 
 auc = function(trueval, predval){
   df = as.data.frame(cbind(trueval,predval))
   names(df) = c("trueval","predval")
